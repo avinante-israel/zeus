@@ -12,10 +12,10 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<div class="col-sm-8">
+			<div class="col-sm-6">
 				<p>&copy; All rights reserved. Zeus Label and Silkscreen Company</p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-6">
 				<div class="pull-right">
 					<ul class="list-inline">
 						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-facebook.png' ?>" /></a></span></li>

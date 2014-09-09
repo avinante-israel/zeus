@@ -34,13 +34,15 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding container-fluid">
-			<div class="col-md-9">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . "/inc/images/logo.png" ?>" /></a>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<p class="pull-right">Call us at: <strong><span>+123-456-7890</span></strong></p>
-					<p class="pull-right">Email us: <span>support@zues.com</span></p>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . "/inc/images/logo.png" ?>" /></a>
+				</div>
+				<div class="col-sm-6">
+					<ul>
+						<li>Call us at: <strong>+123-456-7890</strong></li>
+						<li>Email us: <span>support@zues.com</span></li>
+					</ul>
 				</div>
 			</div>
 		</div>

@@ -838,17 +838,23 @@ header{
 	padding-bottom: 20px;
 }
 
-.site-branding p{
+.site-branding ul{
+	list-style: none;
+	text-align: right;
+}
+
+.site-branding ul li{
 	margin: 0px;
 	color: #6d6f72;
 	font-family: OpenSans;
 }
 
-.site-branding p span{
+.site-branding ul li span{
 	color: #22b45e;
 }
 
-.site-branding p strong span{
+.site-branding ul li strong{
+	color: #22b45e;
 	font-size: 18px;
 	font-family: OpenSans Bold;
 }
@@ -929,9 +935,10 @@ footer p{
 
 	#menu .current_page_item{
 		background-color: #22b45e;
-		-webkit-border-bottom-right-radius: 1000px;
-		-moz-border-radius-bottomright: 1000px;
-		border-bottom-right-radius: 1000px;
+		background-image: url("inc/images/nav-background-image.png");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: auto 100%;
 	}
 
 	#menu .current_page_item:hover{
