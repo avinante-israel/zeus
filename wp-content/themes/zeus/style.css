@@ -803,6 +803,8 @@ body{
 	background-repeat: repeat-y;
 	background-color: #ffffff;
 	box-shadow: 5px 1px 5px #dcdcdc;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /*** FONT ***/
@@ -833,6 +835,8 @@ body{
 /*** HEADER ***/
 .site-branding p{
 	margin: 0px;
+	color: #6d6f72;
+	font-family: OpenSans;
 }
 
 .site-branding p span{
@@ -840,5 +844,18 @@ body{
 }
 
 .site-branding p strong span{
-	font-size: 16px;
+	font-size: 18px;
+	font-family: OpenSans Bold;
+}
+
+/*** FOOTER ***/
+footer{
+	background-color: #6d6f72;
+	padding: 10px 10px 0px 10px;
+}
+
+footer p{
+	color: #eeeeee;
+	font-size: 12px;
+	margin-top: 5px;
 }

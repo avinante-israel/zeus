@@ -46,9 +46,24 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container-fluid">
 	
-		<!--- <nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'zeus' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<nav id="site-navigation" class="col-sm-3" role="navigation">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+				<span><b>Menu</b></span>
+			</button>
+			<div id="nav-menu" class="nav-sidebar">
+				<div class="container">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'primary',
+								'container' => false,
+								'menu_class' => 'nav tabs'
+							)
+						);
+					?>
+				</div>
+			</div>
+			<div class="clear-fix"></div>
 		</nav><!-- #site-navigation -->

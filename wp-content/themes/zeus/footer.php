@@ -12,9 +12,20 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'zeus' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'zeus' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'zeus' ), 'zeus', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="col-sm-8">
+				<p>&copy; All rights reerved. Zeus Label and Silkscreen Company</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="pull-right">
+					<ul class="list-inline">
+						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-facebook.png' ?>" /></a></span></li>
+						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-twitter.png' ?>" /></a></span></li>
+						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-googleplus.png' ?>" /></a></span></li>
+						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-instagram.png' ?>" /></a></span></li>
+						<li><span><a href="#"><img src="<?php echo get_template_directory_uri() . '/inc/images/social/footer-pinterest.png' ?>" /></a></span></li>
+					</ul>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
