@@ -790,3 +790,55 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*** CUSTOM CSS ***/
+/*** PAGE ***/
+body{
+	background-image: url("inc/images/bg.jpg");
+	background-repeat: repeat-y repeat-x;
+}
+
+#page{
+	background-image: url("inc/images/side-line.jpg");
+	background-repeat: repeat-y;
+	background-color: #ffffff;
+	box-shadow: 5px 1px 5px #dcdcdc;
+}
+
+/*** FONT ***/
+@font-face{
+	font-family: OpenSans;
+	src: url("fonts/open-sans/OpenSans-Regular.ttf") format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: OpenSans Bold;
+	src: url("fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: OpenSans Light;
+	src: url("fonts/open-sans/OpenSans-Light.ttf") format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: OpenSans Italic;
+	src: url("fonts/open-sans/OpenSans-Italic.ttf") format('truetype');
+	font-weight: normal;
+}
+
+/*** HEADER ***/
+.site-branding p{
+	margin: 0px;
+}
+
+.site-branding p span{
+	color: #22b45e;
+}
+
+.site-branding p strong span{
+	font-size: 16px;
+}
