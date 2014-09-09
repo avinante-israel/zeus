@@ -13,7 +13,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="col-sm-8">
-				<p>&copy; All rights reerved. Zeus Label and Silkscreen Company</p>
+				<p>&copy; All rights reserved. Zeus Label and Silkscreen Company</p>
 			</div>
 			<div class="col-sm-4">
 				<div class="pull-right">
@@ -31,6 +31,9 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -48,22 +48,21 @@
 
 	<div id="content" class="site-content container-fluid">
 	
-		<nav id="site-navigation" class="col-sm-3" role="navigation">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
-				<span><b>Menu</b></span>
-			</button>
-			<div id="nav-menu" class="nav-sidebar">
-				<div class="container">
-					<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'primary',
-								'container' => false,
-								'menu_class' => 'nav tabs'
-							)
-						);
-					?>
+		<nav id="side-menu" class="row container-fluid col-lg-4">
+			<div class="sidebar-nav">
+				<div class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<span class="visible-xs navbar-brand">Menu</span>
+					</div>
+					<div id="menu" class="navbar-collapse collapse sidebar-navbar-collapse">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => FALSE, 'menu_class' => 'nav navbar-nav' ) ); ?>
+					</div>
 				</div>
 			</div>
-			<div class="clear-fix"></div>
-		</nav><!-- #site-navigation -->
+		</nav>
