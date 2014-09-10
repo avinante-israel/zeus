@@ -38,7 +38,7 @@ get_header(); ?>
 							'title_li'			=> __(' '),
 							'echo'			=> 1,
 							'hide_empty'	=> 0,
-							'exclude'		=> 1,
+							'exclude'		=> '1, 9, 8',
 							'items_wrap'	=> '<ul class="list-inline"></ul>'
 						);
 		?>
