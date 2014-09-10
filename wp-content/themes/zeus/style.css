@@ -807,6 +807,11 @@ body{
 	padding-right: 0px;
 }
 
+#content .container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 /*** FONT ***/
 @font-face{
 	font-family: OpenSans;
@@ -904,7 +909,6 @@ footer p{
 	
 @media (min-width: 768px){
 	#side-menu{
-		padding-left: 0px;
 		width: 240px;
 		margin-right: 5px;
 	}
@@ -943,5 +947,42 @@ footer p{
 
 	#menu .current_page_item:hover{
 		background-color: #22b45e;
+	}
+}
+
+/*** CONTENT ***/
+#categories li,
+#categories ul{
+	list-style: none;
+	background-color: #98999d;
+}
+
+#categories ul li a{
+	color: #ffffff;
+}
+
+#capabilities{
+	background-color: #22b45e;
+}
+
+#category-link ul li{
+	padding: 10px 20px 9px 20px;
+}
+
+#categories .row{
+	background-color: #98999d;
+}
+
+@media (min-width: 768px) {
+	#categories ul li.first{
+		background-color: #62c88d;
+		background-image: url("inc/images/capabilities.png");
+		background-repeat: no-repeat;
+		padding-left: 40px;
+	}
+	
+	#category-link{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
