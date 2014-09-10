@@ -130,4 +130,4 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 //add post thumbnail
-add_theme_support( 'post-thumbnails', array( 'post' ) );
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );

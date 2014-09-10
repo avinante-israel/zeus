@@ -965,11 +965,15 @@ footer p{
 	background-color: #22b45e;
 }
 
+#capabilities h4{
+	color: #ffffff;
+}
+
 #category-link ul li{
 	padding: 10px 20px 9px 20px;
 }
 
-#categories .row{
+#categories.row{
 	background-color: #98999d;
 }
 
@@ -985,4 +989,31 @@ footer p{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	
+	#category-content .col-sm-4{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#category-content .col-xs-4{
+		padding: 0px;
+	}
+
+	#category-content .col-xs-8{
+		width: 180px;
+		background-color: #62c88d;
+		height: 100%;
+	}
+
+	#category-content .col-xs-8 p{
+		padding: 22px 15px;
+		color: #ffffff;
+	}
+}
+
+/*** ABOUT ***/
+#about p{
+	font-family: OpenSans Light;
+	font-size: 20px;
+	text-align: justify;
 }
