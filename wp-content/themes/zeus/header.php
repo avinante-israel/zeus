@@ -40,7 +40,7 @@
 				</div>
 				<div class="col-sm-6">
 					<ul>
-						<li>Call us at: <strong>+123-456-7890</strong></li>
+						<li>Call us at: <span style="font-family: OpenSans Bold; font-size: 17px;">+123-456-7890</span></li>
 						<li>Email us: <span>support@zues.com</span></li>
 					</ul>
 				</div>

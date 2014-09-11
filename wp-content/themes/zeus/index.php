@@ -39,8 +39,9 @@ get_header(); ?>
 			</div>
 		</div>
 		
-		<div id="category-content" class="row">
 		<div style="margin-top: 30px;"></div>
+		
+		<div id="category-content" class="row">
 			<div class="col-sm-4 col-sm-push-4">
 				<div class="col-xs-4" style="padding: 0px;">
 					<img src="<?php echo get_template_directory_uri() . "/inc/images/printing.png" ?>" />
@@ -58,6 +59,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+		
 		<div style="margin-top: 30px;"></div>
 	</div>
 
