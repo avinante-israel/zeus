@@ -11,7 +11,7 @@
  */
 
  /*
- Template Name: Services
+ Template Name: Products
  */
  
 get_header(); ?>
@@ -25,7 +25,7 @@ get_header(); ?>
 									'post_type'			=> 'post',
 									'posts_per_page'	=> 6,
 									'paged'					=> $paged,
-									'cat'						=> 8,
+									'cat'						=> 9,
 									'order'					=> 'ASC'
 								);
 					query_posts($args);
