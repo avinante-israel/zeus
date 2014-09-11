@@ -16,18 +16,32 @@
  
 get_header(); ?>
 
-		<div id="primary" class="content-area container-fluid col-lg-9 pull-right">
+		<div id="primary" class="content-area container-fluid col-lg-9">
 			<main id="main" class="site-main" role="main">
 
 				<h1><?php the_title(); ?> Us:</h1>
 				
-				<div class="form-group">
-					<input class="form-control" type="text" placeholder="Name:" />
-					<input class="form-control" type="text" placeholder="Email:" />
-					<input class="form-control" type="text" placeholder="Contact:" />
-					<input class="form-control" type="text" placeholder="Subject:" />
-					<textarea class="form-control" row="100" placeholder="Message:"></textarea>
+				<?php while( have_posts() ) : the_post(); ?>
+				<div id="contact" class="row">
+					<div class="form-group col-sm-8">
+						<div class="col-sm-8">
+							<input class="form-control" type="text" placeholder="Name:" />
+							<input class="form-control" type="text" placeholder="Email:" />
+							<input class="form-control" type="text" placeholder="Contact:" />
+							<input class="form-control" type="text" placeholder="Subject:" />
+						</div>
+						<div class="col-sm-12">
+							<textarea class="form-control" rows="5" placeholder="Message:"></textarea>
+						</div>
+						<div class="col-sm-12">
+							<a href="#" class="btn btn-default">Send</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<?php the_content(); ?>
+					</div>
 				</div>
+				<?php endwhile; ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
