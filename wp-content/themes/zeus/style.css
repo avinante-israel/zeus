@@ -843,6 +843,10 @@ p{
 	text-align: justify;
 }
 
+main h1{
+	color: #22b45e;
+}
+
 /*** HEADER ***/
 header{
 	padding-top: 20px;
@@ -1021,7 +1025,6 @@ header{
 #about p{
 	font-family: OpenSans Light;
 	font-size: 20px;
-	text-align: justify;
 }
 
 /*** SERVICES / PRODUCTS ***/
@@ -1061,5 +1064,4 @@ header{
 	background: -ms-linear-gradient(top,  rgba(32,141,80,0.50) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(32,141,80,0.50) 0%,rgba(255,255,255,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf208d50', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
 }
