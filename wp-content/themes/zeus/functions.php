@@ -131,3 +131,9 @@ require get_template_directory() . '/inc/jetpack.php';
 
 //add post thumbnail
 add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+
+//add new menu
+function register_my_menu() {
+	register_nav_menu('capabilities-menu', __( 'Capabilities' ));
+}
+add_action( 'init', 'register_my_menu' );

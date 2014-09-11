@@ -44,7 +44,7 @@
 	
 	//add class to first li
 	$(document).ready(function(){
-		$("#categories ul li:first-child").addClass("first");
+		$("#capabilities ul li:first-child").addClass("first");
 	});
 	
 	//effect on hover

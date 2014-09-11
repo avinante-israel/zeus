@@ -962,63 +962,59 @@ header{
 }
 
 /*** CONTENT ***/
-#categories li,
-#categories ul{
+#capabilities li,
+#capabilities ul{
 	list-style: none;
 	background-color: #98999d;
 }
 
-#categories ul li a{
+#capabilities ul li a{
 	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-#capabilities{
-	background-color: #22b45e;
+#capabilities ul li a:hover{
+	background-color: #62c88d;
 }
 
 #capabilities h4{
 	color: #ffffff;
 }
 
-#category-link ul li{
-	padding: 10px 20px 9px 20px;
+#capabilities .col-sm-3{
+	background-color: #22b45e;
 }
 
-#categories.row{
+#capabilities.row{
 	background-color: #98999d;
 }
 
-@media (min-width: 768px) {
-	#categories ul li.first{
-		background-color: #62c88d;
-		background-image: url("inc/images/capabilities.png");
-		background-repeat: no-repeat;
-		padding-left: 40px;
+@media (min-width: 768px){
+	#capabilities .col-sm-9{
+		padding-left: 0px;
 	}
 	
-	#category-link{
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	
-	#category-content .col-sm-4{
-		padding-left: 0px;
-		padding-right: 0px;
+	.for-capabilities:before{
+		border-width: 20px 0px 0px 23px;
 	}
 
-	#category-content .col-xs-4{
-		padding: 0px;
+	.for-capabilities:after{
+		margin-top: -20px;
+		border-width: 0px 0px 20px 23px;
 	}
 
-	#category-content .col-xs-8{
-		width: 180px;
-		background-color: #62c88d;
-		height: 100%;
-	}
-
-	#category-content .col-xs-8 p{
-		padding: 22px 15px;
-		color: #ffffff;
+	.for-capabilities:after,
+	.for-capabilities:before{
+		content: "";
+		z-index: 1;
+		position: absolute;
+		border-style: solid;
+		border-color: transparent #22b45e;
+		right: -23px;
+		
 	}
 }
 

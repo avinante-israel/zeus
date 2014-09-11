@@ -30,26 +30,15 @@ get_header(); ?>
 	</div><!-- .container-fluid -->
 	
 	<div class="container-fluid">
-		<?php
-			$args = array(
-							'orderby'		=> 'ID',
-							'order'			=> 'ASC',
-							'style'			=> 'list',
-							'title_li'			=> __(' '),
-							'echo'			=> 1,
-							'hide_empty'	=> 0,
-							'exclude'		=> '1, 9, 8',
-							'items_wrap'	=> '<ul class="list-inline"></ul>'
-						);
-		?>
-		<div id="categories" class="row">
-			<div id="capabilities" class="col-sm-3" style="width: 240px">
+		<div id="capabilities" class="row">
+			<div class="col-sm-3 for-capabilities">
 				<h4>Capabilities</h4>
 			</div>
-			<div id="category-link" class="col-sm-9">
-				<?php wp_list_categories($args); ?>
+			<div class="col-sm-9">
+				<?php wp_nav_menu( array( 'theme_location' => 'capabilities-menu', 'menu_class' => 'nav navbar-nav' ) ); ?>
 			</div>
 		</div>
+		
 		<div id="category-content" class="row">
 		<div style="margin-top: 30px;"></div>
 			<div class="col-sm-4 col-sm-push-4">
