@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<div id="primary" class="content-area container-fluid col-lg-9 pull-right">
 			<main id="main" class="site-main" role="main">
-				<?php the_title(); ?>
+				<h1 id="services"><?php the_title(); ?>:</h1>
 				<?php
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 					$args = array(
@@ -30,10 +30,36 @@ get_header(); ?>
 								);
 					query_posts($args);
 				?>
-				<div class="row">
+				<div id="items" class="row">
 					<?php while( have_posts() ) : the_post();?>
-						
-							<div class="col-sm-4"><?php the_post_thumbnail(); ?></div>
+					
+						<?php $count++; ?>
+						<?php if($count%3 == 1) : ?>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="thumbnail">
+										<div class="caption">
+											<p><?php the_title(); ?></p>
+										</div>
+										<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+									</div>
+								</div>
+						<?php elseif($count%3 == 2) : ?>
+								<div class="col-sm-4">
+									<div class="caption">
+										<p><?php the_title(); ?></p>
+									</div>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+								</div>
+						<?php elseif($count%3 == 0) : ?>
+								<div class="col-sm-4">
+									<div class="caption">
+										<p><?php the_title(); ?></p>
+									</div>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+								</div>
+							</div>
+						<?php endif; ?>
 						
 					<?php endwhile; ?>
 				</div>

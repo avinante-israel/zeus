@@ -1017,3 +1017,37 @@ footer p{
 	font-size: 20px;
 	text-align: justify;
 }
+
+/*** SERVICES / PRODUCTS ***/
+#services{
+	font-family: OpenSans Light;
+	color: #22b45e;
+	margin-top: 0px;
+}
+
+#items .row{
+	margin-bottom: 50px;
+}
+
+body {
+  padding-top: 50px;
+}
+ 
+#thumbnail a{
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
