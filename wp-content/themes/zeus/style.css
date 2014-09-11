@@ -837,6 +837,12 @@ body{
 	font-weight: normal;
 }
 
+p{
+	font-family: OpenSans;
+	text-indent: 50px;
+	text-align: justify;
+}
+
 /*** HEADER ***/
 header{
 	padding-top: 20px;
@@ -865,12 +871,12 @@ header{
 }
 
 /*** FOOTER ***/
-footer{
+#colophon{
 	background-color: #6d6f72;
 	padding: 10px 10px 0px 10px;
 }
 
-footer p{
+#colophon p{
 	color: #eeeeee;
 	font-size: 12px;
 	margin-top: 5px;
