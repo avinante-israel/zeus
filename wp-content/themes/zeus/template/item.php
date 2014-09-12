@@ -51,7 +51,7 @@ get_header(); ?>
 								<div class="col-sm-4">
 									<div class="thumbnail">
 										<a href="<?php the_permalink(); ?>">
-											<div class="caption">
+											<div class="title">
 												<h4><?php the_title(); ?></h4>
 											</div>
 										</a>
@@ -62,7 +62,7 @@ get_header(); ?>
 								<div class="col-sm-4">
 									<div class="thumbnail">
 										<a href="<?php the_permalink(); ?>">
-											<div class="caption">
+											<div class="title">
 												<h4><?php the_title(); ?></h4>
 											</div>
 										</a>
@@ -73,7 +73,7 @@ get_header(); ?>
 								<div class="col-sm-4">
 									<div class="thumbnail">
 										<a href="<?php the_permalink(); ?>">
-											<div class="caption">
+											<div class="title">
 												<h4><?php the_title(); ?></h4>
 											</div>
 										</a>

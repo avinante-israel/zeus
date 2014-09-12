@@ -41,21 +41,23 @@ get_header(); ?>
 		
 		<div style="margin-top: 30px;"></div>
 		
-		<div id="category-content" class="row">
-			<div class="col-sm-4 col-sm-push-4">
-				<div class="col-xs-4" style="padding: 0px;">
-					<img src="<?php echo get_template_directory_uri() . "/inc/images/printing.png" ?>" />
-				</div>
-				<div class="col-xs-8" style="background-color: #62c88d;">
-					<p>Lorem ipsum dolor Consectetuer Adipiscing elit Diam nonummy Nibh euismod Tincidunt ut laoreet</p>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-3"  style="background-color: #62c88d;">
+				<div id="printing" class="row">
+					<img src="<?php echo get_template_directory_uri() . "/inc/images/printing.png" ?>"/>
+					<div class="caption">
+						<p>Lorem ipsum dolor Consectetuer Adipiscing elit Diam nonummy Nibh euismod Tincidunt ut laoreet</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 col-sm-push-4">
-				<div class="col-xs-4">
-					<img src="<?php echo get_template_directory_uri() . "/inc/images/non-printing.png" ?>" />
-				</div>
-				<div class="col-xs-8" style="background-color: #b1b2b4;">
-					<p>Lorem ipsum dolor Consectetuer Adipiscing elit Diam nonummy Nibh euismod Tincidunt ut laoreet</p>
+			<div id="margin" class="col-sm-1"></div>
+			<div class="col-md-3"  style="background-color: #b1b2b4;">
+				<div id="non-printing" class="row">
+					<img src="<?php echo get_template_directory_uri() . "/inc/images/non-printing.png" ?>"/>
+					<div class="caption">
+						<p>Lorem ipsum dolor Consectetuer Adipiscing elit Diam nonummy Nibh euismod Tincidunt ut laoreet</p>
+					</div>
 				</div>
 			</div>
 		</div>

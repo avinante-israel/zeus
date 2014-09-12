@@ -1010,6 +1010,26 @@ header{
 	}
 }
 
+@media (max-width: 991px){
+	#margin{
+		display: none;
+	}
+}
+
+#printing img,
+#non-printing img{
+	float: left;
+	margin-right: 20px;
+}
+
+#printing p,
+#non-printing p{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-right: 11px;
+	color: #ffffff;
+}
+
 /*** ABOUT ***/
 #about p{
 	font-family: OpenSans Light;
@@ -1039,7 +1059,7 @@ header{
 	margin: 0px;
 }
  
-.caption{
+.title{
     position: absolute;
     width: 228px;
     height: 218px;
